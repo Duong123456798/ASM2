@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Your Shopping Cart</title>
+<title>Your  Cart</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -12,17 +12,22 @@
 
 <body id="cart-page">
 
-<div id="site" class="cartcontent">
+<div id="site" class="cartcontent" class="bg-dark text-light">
 	<header id="masthead">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<button onclick="window.location.href='home.html'">Home</button>
+		<button onclick="window.location.href='products.html'">Products</button>
+    <button onclick="window.location.href='aboutuspage.html'">About Us</button>
+    <button onclick="window.location.href='contact.html'">Contact</button>
 	</header>
-	<div id="content">
-		<h1>My Shopping Cart</h1>
+	<div id="content" class="container mt-4">
+		<h1 class="mb-4">My Cart</h1>
 		<form id="shopping-cart" action="cart.html" >
-			<table class="shopping-cart">
+			<table class="shopping-cart" class="thead-dark">
 			  <thead>
 				<tr>
 					<th scope="col">Item</th>
-					<th scope="col">Qty</th>
+					<th scope="col">Quantity</th>
 					<th scope="col" colspan="2">Price</th>
 				</tr>
 			  </thead>
@@ -54,7 +59,7 @@
 
 </div>
 
-<footer id="site-info">
+<footer id="site-info" class="bg-dark text-light text-center p-3">
 		Copyright &copy; FarmEasy 2021 <br> Made with &#10084;&#65039; By Le Tung Duong
 	</footer>
 

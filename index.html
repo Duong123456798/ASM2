@@ -1027,57 +1027,59 @@
 			</section>
 
 			<!------COntact------------>
-			<section id="contact">
+			<style>
+				footer {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+			
+				.contact-info {
+					margin-left: 2em;
+					text-align: left;
+				}
+			
+				.social-media {
+					margin-right: 2em;
+					text-align: right;
+				}
+				.social-media-text {
+        margin-bottom: 10px;
+    }
 
-				<div class="container">
-					<h1>Contact Us</h1>
-					<div class="row">
-						<div class="col-md-6">
-							<form class="contact-form">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name..">
-								</div>
-								<div class="form-group">
-									<input type="number" class="form-control" placeholder="Phone no.">
-								</div>
-								<div class="form-group">
-									<input type="email" class="form-control" placeholder="Email..">
-								</div>
-								<div class="form-group">
-									<textarea class="form-control" rows="4" placeholder="Message.."></textarea>
-								</div>
+    .social-media ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</form>
-						</div>
-						<div class="col-md-6 contact-info">
-							<div class="follow"><b><i class="fa fa-map-marker"></i> </b>10/55 Thuy Khue, Thuy Khue Ward, Tay Ho District, Hanoi City
-							</div>
-							<div class="follow"><b><i class="fa fa-mobile"></i> </b>(+84)7862097585</div>
-							<div class="follow"><b><i class="fa fa-envelope"></i> </b>farmshops@gmail.com</div>
+    .social-media ul li {
+        display: inline;
+        margin-right: 10px;
+    }
 
-
-							<div class="follow"><label><b>Get Social </b></label>
-								<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-								<a href="https://www.youtube.com/" target="_blank"><i
-										class="fa fa-youtube-play"></i></a>
-								<a href="https://twitter.com/login/" target="_blank"><i class="fa fa-twitter"></i></a>
-								<a href="https://myaccount.google.com/" target="_blank"><i
-										class="fa fa-google-plus"></i></a>
-
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-
-			</section>
+    .social-media ul li a img {
+        width: 30px; /* Điều chỉnh kích thước logo theo nhu cầu của bạn */
+        height: 30px;
+        border-radius: 50%; /* Làm tròn logo */
+        margin-bottom: -8px; /* Điều chỉnh nếu cần thiết */
+    }
+			</style>
 			<footer id="site-info">
-				Copyright &copy; FarmShop 2023 <br> Made with &#10084;&#65039; By Le Tung Duong
+				<div class="contact-info">
+					Copyright &copy; FarmShop 2023 <br> Made with &#10084;&#65039; By Le Tung Duong <br>
+					Contact Us: <a href="mailto:your-email@example.com">farmshop@gmail.com</a> | Phone: (123) 456-7890
+				</div>
+				<div class="social-media">
+					<div class="social-media-text">Follow us on social media:</div>
+					<ul>
+						<li><a href="https://facebook.com/yourpage" target="_blank" rel="noopener"><img src="img/fb.png" alt="Facebook"></a></li>
+						<li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener"><img src="img/tele.png" alt="Twitter"></a></li>
+						<li><a href="https://instagram.com/yourusername" target="_blank" rel="noopener"><img src="img/ins.png" alt="Instagram"></a></li>
+						<!-- Add more social media links as needed -->
+					</ul>
+				</div>
 			</footer>
-
 
 
 </body>

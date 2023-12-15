@@ -245,11 +245,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #masthead {
-	margin-top: 3em;
-	padding: 2em 0 0.5em 0;
-	border-bottom: 1px solid #ddd;
+	padding: 1.4em 0 0.5em ;
+    
+	width: 100%;
+	display: flex;
+    justify-content: space-around;
 }
 
+#masthead button {
+    /* Thêm kiểu cho nút "Home" */
+    padding: 15px 20px; /* Tăng kích thước padding */
+    background-color: transparent;
+    color: rgb(7, 7, 7); /* Đổi màu chữ cho nút */
+    display: block;
+    margin:auto;
+	cursor: pointer;
+}
+#masthead button:hover {
+    /* Hiệu ứng khi di chuột qua nút */
+    background-color: #0f0; /* Màu nền khi di chuột qua */
+    color: #070707; /* Màu chữ khi di chuột qua */
+}
 #masthead h1 {
 	margin: 0;
 	font-size: 3.5em;
@@ -742,7 +758,11 @@ body#checkout-page  #site-info, body#cart-page #site-info {
 	margin-left: 1em;
 }
 
-#content > h1,
+#content > h1 {
+	font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+}
 #checkout-order-form h2 {
 	font-size: 2em;
 	text-align: center;
